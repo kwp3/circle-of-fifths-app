@@ -89,15 +89,15 @@ export default function ProgressionDisplay({
       {/* Chord Diagrams for Progression */}
       <div className="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-white/10">
         <h4 className="text-xs sm:text-sm font-medium text-slate-400 mb-2 sm:mb-3">Chord Diagrams</h4>
-        <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 sm:gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
           {uniqueChords.map((chord, index) => (
             <div
               key={index}
-              className="bg-white/5 rounded-lg p-2 sm:p-3 flex flex-col items-center"
+              className="bg-white/5 rounded-lg p-3 sm:p-4 flex flex-col items-center"
             >
-              <div className="text-white font-bold text-xs sm:text-sm mb-0.5 sm:mb-1">{chord.chord}</div>
-              <div className="text-[10px] sm:text-xs text-slate-400 mb-1 sm:mb-2">{chord.numeral}</div>
-              <ChordDiagram chordName={chord.chord} size="sm" />
+              <div className="text-white font-bold text-sm sm:text-base mb-1">{chord.chord}</div>
+              <div className="text-[10px] sm:text-xs text-slate-400 mb-2">{chord.numeral}</div>
+              <ChordDiagram chordName={chord.chord} size="md" />
             </div>
           ))}
         </div>

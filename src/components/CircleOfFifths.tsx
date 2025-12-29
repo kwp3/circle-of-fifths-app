@@ -213,9 +213,16 @@ export default function CircleOfFifths({ selectedKey, onKeySelect }: CircleOfFif
           easy to transition between. The inner ring shows <span className="text-slate-300">relative minors</span> -
           each minor key shares the same notes as its adjacent major key.
         </p>
-        <p>
+        <p className="mb-2">
           <span className="text-slate-300">Tip:</span> Keys on opposite sides of the circle sound most
           different from each other (like C and F#).
+        </p>
+        <p className="mt-3 pt-3 border-t border-slate-700">
+          <span className="text-slate-300">Note on chord names:</span> Some chord names may look different
+          than expected due to <span className="text-slate-300">enharmonic equivalents</span> - notes that
+          sound the same but have different names (like D# and Eb). For example, in G#m the V chord is D#
+          (a perfect fifth above G#), even though you might expect to see Eb. Both are correct - they're the
+          same pitch spelled differently.
         </p>
       </div>
     </div>
