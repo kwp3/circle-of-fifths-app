@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Circle of Fifths - Guitar Practice App",
   description: "Interactive Circle of Fifths for guitar practice with chord progressions, strumming patterns, and metronome",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
